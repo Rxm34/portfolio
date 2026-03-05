@@ -57,15 +57,15 @@
 <h1 class="text-xl font-bold">// Mon Portfolio</h1>
 </div>
 <nav class="hidden md:flex items-center gap-6">
-<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Accueil.html">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Accueil.php">
 <span class="text-electric-blue mr-1">/</span>Accueil</a>
-<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Projets.html">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Projets.php">
 <span class="text-electric-blue mr-1">/</span>Projets</a>
-<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Competences.html">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Competences.php">
 <span class="text-electric-blue mr-1">/</span>Compétences</a>
-<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Veille_technologique.html">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Veille_technologique.php">
 <span class="text-electric-blue mr-1">/</span>Veille technologique</a>
-<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Contact.html">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Contact.php">
 <span class="text-electric-blue mr-1">/</span>Contact</a>
 </nav>
 <div class="flex items-center gap-4">
