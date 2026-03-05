@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00aaff",
+                        "electric-blue": "#007BFF",
+                        "neon-green": "#39FF14",
+                        "background-light": "#f0f2f5",
+                        "background-dark": "#121212",
+                        "code-bg-light": "#fbfcfd",
+                        "code-bg-dark": "#1e1e1e",
+                        "border-light": "#d0d7de",
+                        "border-dark": "#2d2d2d",
+                    },
+                    fontFamily: {
+                        display: ["Roboto Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "6px",
+                        lg: "12px",
+                        xl: "16px",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+</script>
+<style>
+.material-symbols-outlined {
+font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+} </style>
+</head>
+<body class="bg-background-dark font-display text-slate-200">
+<div class="flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-dark px-6 py-4">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 text-electric-blue">
+<svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.293 13.293l1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path>
+<path d="M4 17h16v2H4z"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold">// Mon Portfolio</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Accueil.html">
+<span class="text-electric-blue mr-1">/</span>Accueil</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Projets.html">
+<span class="text-electric-blue mr-1">/</span>Projets</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Experiences_professionelles.html">
+<span class="text-electric-blue mr-1">/</span>Expériences professionelles</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Veille_technologique.html">
+<span class="text-electric-blue mr-1">/</span>Veille technologique</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Contact.html">
+<span class="text-electric-blue mr-1">/</span>Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 text-slate-200">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-white mb-4">Compétences Techniques</h1>
+<p class="text-lg text-slate-300 mb-12">Voici un aperçu visuel de mes compétences techniques.</p>
+<div class="space-y-12">
+<div>
+<h3 class="text-2xl font-bold text-white mb-6 border-l-4 border-electric-blue pl-4">Langages de Programmation</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="Python logo" class="h-16 w-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs5P8pxYuxV8-uzbSLXiPiDQQfICFvckOTLVGeM_YIdVZOHQtN5saN82xi4IQE6WC9R6jaxN-_6kp1BUEOPeS-P__CBWoLDbekP-UfhZTWMFQ7cegS-Oz9ZDHGrC24qTiBvh-G1dITUiwq0Qi87fhffXlTu24qxM9Se518BAcB1BUZV2bw-saGPGTJfP4jM693vIgpvgivyuC5ps_WsLqCHU4ivCQcU_dU2hkz3i7b4xbBSBqsIpI0ZbVXaXuWwrVijG7ucmuo"/>
+<h4 class="font-semibold text-center text-sm text-white mt-2">Python</h4>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="C# logo" class="h-16 w-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrblIRfjGk05MKCiH5GUZnKPWxeVYIvENZUY7ywVUJN_qFtj0z3w4LAnVZYg763gX087kFuBjIExl0_15yovfnpPG29Oh4Y719ajZyUzqup1p2wrSoFQzqGwq_i-0TFMkNhw4UPzySbOXJJADCwHksqQycBswEgxV4ieDqqLMoYa8k9dynJFIAGxWKi_Tmo93_weWE_AgpP4A-cWR0sO9CZmwMEYqPJPdtmB2srTJSQdFSJuNir9OaoXGdVjrnf1z6Lp6aM9RK"/>
+<h4 class="font-semibold text-center text-sm text-white mt-2">C#</h4>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="HTML logo" class="h-16 w-16" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"/>
+<h4 class="font-semibold text-center text-sm text-white mt-2">HTML</h4>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="PHP logo" class="h-16 w-16" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"/>
+<h4 class="font-semibold text-center text-sm text-white mt-2">PHP</h4>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-white mb-6 border-l-4 border-electric-blue pl-4">Frameworks</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="Laravel logo" class="h-16 w-16" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"/>
+<h4 class="font-semibold text-center text-sm text-white mt-2">Laravel</h4>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-white mb-6 border-l-4 border-electric-blue pl-4">Bases de Données</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="MySQL logo" class="h-16 w-16" src="mysql.png" />
+<h4 class="font-semibold text-center text-sm text-white mt-2">MySQL</h4>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="SQL Server logo" class="h-16 w-16" src="sqlserver.jpg"/><h4 class="font-semibold text-center text-sm text-white mt-2">SQL Server</h4>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-white mb-6 border-l-4 border-electric-blue pl-4">Outils de Développement</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-white/10">
+<img alt="Git logo" class="h-16 w-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwDobUcCoIUvPvEyMAiH-sQj83WwHO8l9PiVLtXwPIeCmYk4B0U_6dabU9KKKz9hQoeeqG3vzC1U-i3nxXu8nWuKYStluz7M5lqZhi5Z7Hv6m7u4DfD8Viskjt05LMqeqrgyc8a5qLYsceQJR52V49-MsYiytfs316KzmXCdLlhagKjqZ9bERlEISE7JDDLVWy7ppKrGUGRmho5WUOKcMEJwIUQAiN0VxDcY_1ARylR2G_tMkO-7YwNTXaCliB-l3OXn0Cw_O3"/>
+<h4 class="font-semibold text-center text-sm text-white mt-2">Git</h4>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full border-t border-white/10 mt-16">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 py-6">
+<div class="flex items-center gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+</svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+</svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

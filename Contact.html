@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00aaff",
+                        "electric-blue": "#007BFF",
+                        "neon-green": "#39FF14",
+                        "background-light": "#f0f2f5",
+                        "background-dark": "#121212",
+                        "code-bg-light": "#fbfcfd",
+                        "code-bg-dark": "#1e1e1e",
+                        "border-light": "#d0d7de",
+                        "border-dark": "#2d2d2d",
+                    },
+                    fontFamily: {
+                        display: ["Roboto Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "6px",
+                        lg: "12px",
+                        xl: "16px",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-200">
+<div class="flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-dark px-6 py-4">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 text-electric-blue">
+<svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.293 13.293l1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path>
+<path d="M4 17h16v2H4z"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold">// Mon Portfolio</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Accueil.html">
+<span class="text-electric-blue mr-1">/</span>Accueil</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Projets.html">
+<span class="text-electric-blue mr-1">/</span>Projets</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Competences.html">
+<span class="text-electric-blue mr-1">/</span>Compétences</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Experiences_professionelles.html">
+<span class="text-electric-blue mr-1">/</span>Expériences professionelles</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Veille_technologique.html">
+<span class="text-electric-blue mr-1">/</span>Veille technologique</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 text-slate-200">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-text-light">Me Contacter</h1>
+<p class="mt-4 text-lg text-secondary">Une question, une proposition ou juste envie de discuter ? N'hésitez pas.</p>
+</div>
+<div class="bg-[#0F172A] border border-secondary/20 rounded-lg p-8 md:p-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<h2 class="text-2xl font-bold text-text-light">Informations</h2>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 pt-1">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h3 class="font-semibold text-text-light">Email</h3>
+<p class="text-secondary">
+<a class="hover:text-primary transition-colors" href="mailto:contact@exemple.com">contact@exemple.com</a>
+</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 pt-1">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h3 class="font-semibold text-text-light">Téléphone</h3>
+<p class="text-secondary">06 12 34 56 78</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 pt-1">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h3 class="font-semibold text-text-light">Localisation</h3>
+<p class="text-secondary">Région de Lyon, France</p>
+</div>
+</div>
+</div>
+<div class="pt-4 space-x-4">
+<a class="inline-block text-secondary hover:text-primary transition-colors" href="#">
+<svg class="feather feather-github" fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+</a>
+<a class="inline-block text-secondary hover:text-primary transition-colors" href="#">
+<svg class="feather feather-linkedin" fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+<rect height="12" width="4" x="2" y="9"></rect>
+<circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<h2 class="text-2xl font-bold text-text-light">Formulaire de contact</h2>
+<div>
+<label class="block text-sm font-medium text-secondary mb-1" for="name">Nom</label>
+<input class="form-input block w-full rounded-md border-secondary-dark/30 bg-slate-800 text-text-light focus:border-primary focus:ring-primary sm:text-sm py-2 px-3" id="name" name="name" placeholder="Votre nom" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-secondary mb-1" for="email-form">Email</label>
+<input class="form-input block w-full rounded-md border-secondary-dark/30 bg-slate-800 text-text-light focus:border-primary focus:ring-primary sm:text-sm py-2 px-3" id="email-form" name="email" placeholder="votre.email@exemple.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-secondary mb-1" for="message">Message</label>
+<textarea class="form-textarea block w-full rounded-md border-secondary-dark/30 bg-slate-800 text-text-light focus:border-primary focus:ring-primary sm:text-sm py-2 px-3" id="message" name="message" placeholder="Votre message..." rows="4"></textarea>
+</div>
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light transition-colors" type="submit">
+                                    Envoyer le message
+                                </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light border-t border-secondary/20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+<p class="text-center text-sm text-secondary">© 2024 MonPortfolio.dev - Développé avec passion.</p>
+</div>
+</footer>
+</div>
+
+</body></html>

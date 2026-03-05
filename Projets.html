@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                primary: "#00aaff",
+                "electric-blue": "#007BFF",
+                "neon-green": "#39FF14",
+                "background-light": "#f0f2f5",
+                "background-dark": "#121212",
+                "code-bg-light": "#fbfcfd",
+                "code-bg-dark": "#1e1e1e",
+                "border-light": "#d0d7de",
+                "border-dark": "#2d2d2d",
+            },
+            fontFamily: {
+                display: ["Roboto Mono", "monospace"],
+            },
+            borderRadius: {
+                DEFAULT: "6px",
+                lg: "12px",
+                xl: "16px",
+                full: "9999px"
+            },
+        },
+    },
+};
+</script>
+<style>
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+</style>
+</head>
+<body class="bg-background-dark font-display text-slate-200">
+<div class="flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-dark px-6 py-4">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 text-electric-blue">
+<svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.293 13.293l1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path>
+<path d="M4 17h16v2H4z"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold">// Mon Portfolio</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Accueil.html"><span class="text-electric-blue mr-1">/</span>Accueil</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Competences.html"><span class="text-electric-blue mr-1">/</span>Compétences</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Experiences_professionelles.html"><span class="text-electric-blue mr-1">/</span>Expériences professionnelles</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Veille_technologique.html"><span class="text-electric-blue mr-1">/</span>Veille technologique</a>
+<a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Contact.html"><span class="text-electric-blue mr-1">/</span>Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 text-slate-200">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+</header>
+
+<main class="flex-grow">
+<section class="py-16 sm:py-20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Mes Projets de Développement</h1>
+</div>
+
+<!-- Grille des projets -->
+<div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+  
+  <!-- Projet 1 -->
+  <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 flex flex-col items-center">
+    <h3 class="text-2xl font-bold text-white mb-2 text-center">Gestion de formations informatiques</h3>
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
+      <span class="rounded-full bg-sky-900/50 px-3 py-1 text-xs font-semibold text-sky-300">HTML</span>
+      <span class="rounded-full bg-fuchsia-900/50 px-3 py-1 text-xs font-semibold text-fuchsia-300">PHP</span>
+      <span class="rounded-full bg-amber-900/50 px-3 py-1 text-xs font-semibold text-amber-300">SQL</span>
+    </div>
+    <a href="http://localhost:8080/Projet/index.php">
+      <img src="GestionFormation.png" alt="Projet" class="w-full h-64 object-cover rounded-lg shadow-md mb-4">
+    </a>
+    <a href="http://localhost:8080/Projet/index.php" class="text-sm font-bold text-accent-pink hover:underline">
+      http://localhost:8080/Projet/index.php
+    </a>
+  </div>
+
+  <!-- Projet 2 -->
+  <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 flex flex-col items-center">
+    <h3 class="text-2xl font-bold text-white mb-2 text-center">Forum BTS SIO</h3>
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
+      <span class="rounded-full bg-sky-900/50 px-3 py-1 text-xs font-semibold text-sky-300">HTML</span>
+      <span class="rounded-full bg-fuchsia-900/50 px-3 py-1 text-xs font-semibold text-fuchsia-300">PHP</span>
+      <span class="rounded-full bg-amber-900/50 px-3 py-1 text-xs font-semibold text-amber-300">SQL</span>
+    </div>
+    <a href="http://localhost:8080/Projet%20Forum/index.php">
+      <img src="Forum.png" alt="Projet" class="w-full h-64 object-cover rounded-lg shadow-md mb-4">
+    </a>
+    <a href="http://localhost:8080/Projet%20Forum/index.php" class="text-sm font-bold text-accent-pink hover:underline">
+      http://localhost:8080/Projet%20Forum/index.php
+    </a>
+  </div>
+
+  <!-- Projet 3 -->
+  <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 flex flex-col items-center">
+    <h3 class="text-2xl font-bold text-white mb-2 text-center">DigitalFishing</h3>
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
+      <span class="rounded-full bg-green-900/50 px-3 py-1 text-xs font-semibold text-green-300">C#</span>
+      <span class="rounded-full bg-yellow-900/50 px-3 py-1 text-xs font-semibold text-yellow-300">SQL</span>
+    </div>
+    <img src="DigitalFishing.png" alt="Projet" class="w-full h-auto object-cover rounded-lg shadow-md mb-4">
+    <a href="Projets/DigitalFishing.zip" class="inline-block px-6 py-2 bg-electric-blue text-white font-bold rounded-lg hover:bg-electric-blue/80 transition" download>
+      Télécharger l'application
+    </a>
+  </div>
+
+    <!-- Projet 3 -->
+  <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 flex flex-col items-center">
+    <h3 class="text-2xl font-bold text-white mb-2 text-center">Géométrie</h3>
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
+      <span class="rounded-full bg-green-900/50 px-3 py-1 text-xs font-semibold text-green-300">C#</span>
+    </div>
+    <img src="Geometrie.png" alt="Projet" class="w-full h-auto object-cover rounded-lg shadow-md mb-4">
+    <a href="Projets/Geometrie.zip" class="inline-block px-6 py-2 bg-electric-blue text-white font-bold rounded-lg hover:bg-electric-blue/80 transition" download>
+      Télécharger l'application
+    </a>
+  </div>
+
+   <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 flex flex-col items-center">
+    <h3 class="text-2xl font-bold text-white mb-2 text-center">JobPilot</h3>
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
+      <span class="rounded-full bg-red-900/50 px-3 py-1 text-xs font-semibold text-red-300">LARAVEL</span>
+      <span class="rounded-full bg-fuchsia-900/50 px-3 py-1 text-xs font-semibold text-fuchsia-300">PHP</span>
+      <span class="rounded-full bg-amber-900/50 px-3 py-1 text-xs font-semibold text-amber-300">SQL</span>
+    </div>
+    <a href="https://jobpilot.test/">
+      <img src="JobPilot.png" alt="Projet" class="w-full h-64 object-cover rounded-lg shadow-md mb-4">
+    </a>
+    <a href="https://jobpilot.test/" class="text-sm font-bold text-accent-pink hover:underline">
+      https://jobpilot.test/
+    </a>
+  </div>
+
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-background-dark border-t border-gray-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="text-center text-sm text-gray-400">
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
