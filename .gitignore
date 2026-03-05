@@ -1,0 +1,9 @@
+# Fichiers de configuration sensibles
+.env
+
+# Dossiers générés par les outils (ex: Composer)
+/vendor
+
+# Fichiers temporaires de Windows ou Mac
+.DS_Store
+Thumbs.db
