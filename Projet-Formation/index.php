@@ -73,43 +73,51 @@
       </div>
     </section>
 
+    <?php 
+      include('connexion.php');
+      $resultat = $cnn->prepare("SELECT * FROM THEME");
+      $resultat->execute();
+      // Affichage des lignes. Une ligne contient un enregistrement
+      while($ligne = $resultat->fetch()) {
+    ?> 
+
     <section class="blog-posts">
-        <div class="container">
-            <h2>Bienvenue chez EduTech</h2><br><br>
-            <p>EduTech est une entreprise spécialisée dans les formations informatiques.</p>
-            <p>Que vous soyez débutant ou professionnel, nos parcours sont conçus pour tous les niveaux.</p><br><br>
-            <h3>Veuillez choisir le thème de votre prochaine formation.</h3>
-            
-            <div class="main-banner header-text">
-                <div class="container-fluid">
-                    <div class="owl-banner owl-carousel">
-                        <?php 
-                            include('connexion.php');
-                            $resultat = $cnn->prepare("SELECT * FROM THEME");
-                            $resultat->execute();
-                            // Affichage des lignes
-                            while($ligne = $resultat->fetch()) {
-                        ?>           
-                            <a href="formation.php?id=<?php echo $ligne['IdTheme']; ?>">
-                                <div class="item">
-                                    <img src="assets/images/<?php echo $ligne['logotheme']; ?>" alt="">
-                                    <div class="item-content">
-                                        <div class="main-content">
-                                            <div class="meta-category">
-                                                <span><?php echo $ligne['NomTheme']; ?></span> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        <?php
-                            }
-                        ?>
+    <h2>Bienvenue chez EduTech</h2><br><br>
+    <?php echo '<p>EduTech est une entreprise spécialisée dans les formations informatiques.</p>';
+          echo '<p>Que vous soyez débutant ou professionnel, nos parcours sont conçus pour </p>';
+          echo '<p>tous les niveaux.</p><br><br>';
+          echo '<h3> Veuillez choisir le thème de votre prochaine formation.</h3>'?>
+    <div class="main-banner header-text">
+      <div class="container-fluid">
+        <div class="owl-banner owl-carousel">
+        
+          
+            <?php 
+                $resultat_inner = $cnn->query("SELECT * FROM THEME");
+                while($ligne_inner = $resultat_inner->fetch()) {
+            ?>           
+                <a href="formation.php?id=<?php echo $ligne_inner['IdTheme']; ?>"><div class="item">
+                    <img src="assets/images/<?php echo $ligne_inner['logotheme']; ?>" alt="" >
+                    <div class="item-content">
+                    <div class="main-content">
+                        <div class="meta-category">
+                            <?php echo '<span>'.$ligne_inner['NomTheme'].'</span>'; ?> 
+                        </div>
+                    </div>
                     </div>
                 </div>
-            </div>
+                </a>
+            <?php
+                }
+            ?>
         </div>
+      </div>
+    </div>
     </section>
+    
+    <?php
+      } // Fin de la boucle while du début
+    ?>
     
     <footer>
       <div class="container">
@@ -134,7 +142,7 @@
     <script src="assets/js/accordions.js"></script>
 
     <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; 
+      cleared[0] = cleared[1] = cleared[2] = 0;
       function clearField(t){                   
       if(! cleared[t.id]){                     
           cleared[t.id] = 1;  

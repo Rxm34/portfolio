@@ -89,10 +89,10 @@ tailwind.config = {
       <span class="rounded-full bg-fuchsia-900/50 px-3 py-1 text-xs font-semibold text-fuchsia-300">PHP</span>
       <span class="rounded-full bg-amber-900/50 px-3 py-1 text-xs font-semibold text-amber-300">SQL</span>
     </div>
-    <a href="Projet Formation/index.php">
+    <a href="Portfolio/Projet-Formation/index.php">
     <img src="GestionFormation.png" alt="Projet" class="w-full h-64 object-cover rounded-lg shadow-md mb-4">
     </a>
-    <a href="Projet Formation/index.php" class="text-sm font-bold text-accent-pink hover:underline">
+    <a href="Portfolio/Projet-formation/index.php" class="text-sm font-bold text-accent-pink hover:underline">
         Accéder au projet
     </a>
   </div>
