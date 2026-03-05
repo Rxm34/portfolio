@@ -19,6 +19,7 @@
 </head>
 
   <body id="accueil">
+    <h1>TEST DE CHARGEMENT</h1>
 
     <div id="preloader">
         <div class="jumper">
