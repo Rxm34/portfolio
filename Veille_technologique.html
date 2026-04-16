@@ -20,155 +20,155 @@
                         "electric-blue": "#007BFF",
                         "neon-green": "#39FF14",
                         "background-light": "#f0f2f5",
-                        "background-dark": "#121212",
-                        "border-dark": "#2d2d2d",
+                        "background-dark": "#0a0a0c",
+                        "border-dark": "#1f2937",
                     },
                     fontFamily: {
                         display: ["Roboto Mono", "monospace"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "6px",
-                        lg: "12px",
-                        xl: "16px",
-                        full: "9999px"
                     },
                 },
             },
         };
     </script>
     <style>
-        .material-symbols-outlined {
-            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-        }
-        /* Custom scrollbar */
+        .material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; }
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #121212; }
-        ::-webkit-scrollbar-thumb { background: #2d2d2d; border-radius: 10px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #00aaff; }
+        
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(57, 255, 20, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(57, 255, 20, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(57, 255, 20, 0); }
+        }
+        .pulse-live { animation: pulse-green 2s infinite; }
     </style>
 </head>
-<body class="bg-background-dark font-display text-slate-200">
+<body class="bg-background-dark font-display text-slate-300">
     <div class="flex min-h-screen w-full flex-col">
         
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-border-dark px-6 py-4">
+        <header class="flex items-center justify-between border-b border-border-dark px-6 py-4 sticky top-0 bg-background-dark/80 backdrop-blur-md z-50">
             <div class="flex items-center gap-3 text-white">
-                <div class="size-8 text-electric-blue">
-                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.293 13.293l1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path>
-                        <path d="M4 17h16v2H4z"></path>
-                    </svg>
+                <div class="size-8 text-primary">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M6.293 13.293l1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586zM4 17h16v2H4z"></path></svg>
                 </div>
-                <h1 class="text-xl font-bold">// Mon Portfolio</h1>
+                <h1 class="text-xl font-bold tracking-tighter">// PORTFOLIO_V2</h1>
             </div>
             <nav class="hidden md:flex items-center gap-6">
-                <a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="index.html"><span class="text-electric-blue mr-1">/</span>Accueil</a>
-                <a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Projets.html"><span class="text-electric-blue mr-1">/</span>Projets</a>
-                <a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Competences.html"><span class="text-electric-blue mr-1">/</span>Compétences</a>
-                <a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Experiences_professionelles.html"><span class="text-electric-blue mr-1">/</span>Expériences professionnelles</a>
-                <a class="text-sm font-medium text-slate-300 hover:text-electric-blue transition-colors" href="Contact.html"><span class="text-electric-blue mr-1">/</span>Contact</a>
+                <a class="text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Accueil</a>
+                <a class="text-xs uppercase tracking-widest text-primary font-bold" href="Veille.html">Veille</a>
+                <a class="text-xs uppercase tracking-widest hover:text-primary transition-colors" href="Projets.html">Projets</a>
+                <a class="text-xs uppercase tracking-widest hover:text-primary transition-colors" href="Contact.html">Contact</a>
             </nav>
-            <div class="flex items-center gap-4">
-                <button class="md:hidden p-2 text-slate-200">
-                    <span class="material-symbols-outlined"> menu </span>
-                </button>
-            </div>
         </header>
 
-        <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-            <div class="max-w-4xl mx-auto">
+        <main class="flex-grow container mx-auto px-4 py-12">
+            <div class="max-w-5xl mx-auto">
                 
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Veille Technologique<span class="text-primary">_</span></h2>
-                    <p class="text-lg text-slate-400 max-w-2xl mx-auto">
-                        Analyse automatisée sur le <strong>développement d'architectures IA</strong>, l'ingénierie des données et l'optimisation des algorithmes d'apprentissage.
+                <div class="mb-20">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-neon-green"></span>
+                        </span>
+                        <span class="text-neon-green text-xs font-bold uppercase tracking-[0.2em]">Flux de veille actif en temps réel</span>
+                    </div>
+                    <h2 class="text-5xl md:text-6xl font-bold text-white mb-6">
+                        AI Development <br/> <span class="text-primary italic">Intelligence</span> Monitor
+                    </h2>
+                    <p class="text-slate-400 text-lg max-w-2xl leading-relaxed border-l-2 border-primary pl-6">
+                        Exploration automatisée des architectures de Deep Learning, du MLOps et des innovations algorithmiques. 
+                        Propulsé par un moteur de capture personnalisé sur <span class="text-white font-semibold">Google Apps Script</span>.
                     </p>
                 </div>
 
-                <div class="space-y-16">
-                    
-                    <div>
-                        <h3 class="text-2xl font-bold mb-8 text-white flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">engineering</span> Ingénierie & Développement
+                <div class="mb-20 grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white/5 border border-border-dark p-8 rounded-xl">
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">terminal</span> Pipeline Technique
                         </h3>
-                        <div class="grid gap-8">
-                            <article class="p-6 rounded-lg bg-white/5 border border-border-dark hover:border-primary/50 transition-all group">
-                                <div class="flex flex-col md:flex-row gap-6">
-                                    <div class="flex-grow">
-                                        <p class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Back-end • 2026</p>
-                                        <h4 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Optimisation des inférences en production</h4>
-                                        <p class="mt-3 text-slate-400 leading-relaxed">
-                                            Étude des techniques de quantification et de parallélisation pour réduire la latence des modèles prédictifs au sein d'architectures micro-services.
-                                        </p>
-                                        <div class="mt-4 flex gap-4">
-                                            <span class="text-xs py-1 px-2 bg-slate-800 rounded text-slate-300">#Backend</span>
-                                            <span class="text-xs py-1 px-2 bg-slate-800 rounded text-slate-300">#Optimization</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="p-6 rounded-lg bg-white/5 border border-border-dark hover:border-primary/50 transition-all group">
-                                <div class="flex flex-col md:flex-row gap-6">
-                                    <div class="flex-grow">
-                                        <p class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Data Science • 2026</p>
-                                        <h4 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Évolution des frameworks de Deep Learning</h4>
-                                        <p class="mt-3 text-slate-400 leading-relaxed">
-                                            Analyse comparative des dernières mises à jour de PyTorch et TensorFlow pour le développement de réseaux de neurones convolutionnels avancés.
-                                        </p>
-                                        <div class="mt-4 flex gap-4">
-                                            <span class="text-xs py-1 px-2 bg-slate-800 rounded text-slate-300">#DeepLearning</span>
-                                            <span class="text-xs py-1 px-2 bg-slate-800 rounded text-slate-300">#Frameworks</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-start gap-3">
+                                <span class="text-primary font-bold">01.</span>
+                                <span><strong>Extraction :</strong> Parsing quotidien de flux RSS (ArXiv, OpenAI Blog, Google AI) via <code class="bg-slate-800 px-1 rounded">UrlFetchApp</code>.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-primary font-bold">02.</span>
+                                <span><strong>Filtrage :</strong> Script Apps Script éliminant les doublons et classant par mots-clés (PyTorch, LLM, SLAM).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-primary font-bold">03.</span>
+                                <span><strong>Stockage :</strong> Centralisation sur Google Sheets servant de base de données structurée.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="p-6 bg-primary/10 border border-primary/20 rounded-lg">
+                            <p class="text-3xl font-bold text-white mb-1">100%</p>
+                            <p class="text-xs uppercase tracking-wider text-primary">Automatisé via Cron Trigger</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-border-dark rounded-lg">
+                            <p class="text-3xl font-bold text-white mb-1">Daily</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500">Fréquence de mise à jour</p>
                         </div>
                     </div>
-
-                    <div>
-                        <h3 class="text-2xl font-bold mb-8 text-white flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">settings_input_component</span> Flux & Traitement
-                        </h3>
-                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="p-6 bg-white/5 rounded-lg border border-border-dark">
-                                <span class="material-symbols-outlined text-primary text-3xl mb-4">memory</span>
-                                <h4 class="text-lg font-bold text-white">Capture</h4>
-                                <p class="mt-2 text-sm text-slate-400">Agrégation automatique via <strong>Apps Script</strong> sur des mots-clés de développement IA (ML, Neural Networks, Computer Vision).</p>
-                            </div>
-                            <div class="p-6 bg-white/5 rounded-lg border border-border-dark">
-                                <span class="material-symbols-outlined text-primary text-3xl mb-4">code_blocks</span>
-                                <h4 class="text-lg font-bold text-white">Technique</h4>
-                                <p class="mt-2 text-sm text-slate-400">Priorisation des flux issus de blogs d'ingénierie et de portails de recherche spécialisés.</p>
-                            </div>
-                            <div class="p-6 bg-white/5 rounded-lg border border-border-dark">
-                                <span class="material-symbols-outlined text-primary text-3xl mb-4">history_edu</span>
-                                <h4 class="text-lg font-bold text-white">Veille Active</h4>
-                                <p class="mt-2 text-sm text-slate-400">Actualisation quotidienne pour suivre le cycle d'innovation rapide de l'ingénierie IA.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-8 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-border-dark">
-                        <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary">code</span> Objectif SLAM
-                        </h3>
-                        <div class="prose prose-invert max-w-none text-slate-400 leading-relaxed">
-                            <p>
-                                Dans ma spécialisation <strong>SLAM</strong>, la veille sur le développement d'IA est cruciale pour anticiper l'intégration de nouvelles librairies au sein des applications.
-                            </p>
-                            <p class="mt-4">
-                                Ce système me permet d'identifier les patterns de conception émergents et les standards de sécurité pour le déploiement d'algorithmes intelligents en environnement professionnel.
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="space-y-12">
+                    <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">database</span> Focus de Recherche
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <article class="group p-8 rounded-xl bg-white/[0.02] border border-border-dark hover:bg-white/[0.05] hover:border-primary/50 transition-all">
+                            <div class="mb-6 flex justify-between items-start">
+                                <span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">neurology</span>
+                                <span class="text-[10px] py-1 px-2 border border-slate-700 rounded text-slate-500 uppercase">Architecture IA</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3">Optimisation des Inférences</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Analyse des méthodes de quantification et d'élagage (pruning) pour le déploiement de modèles sur des environnements contraints (Edge Computing).
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-primary">#QUANTIZATION</span>
+                                <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-primary">#MLOPS</span>
+                            </div>
+                        </article>
+
+                        <article class="group p-8 rounded-xl bg-white/[0.02] border border-border-dark hover:bg-white/[0.05] hover:border-primary/50 transition-all">
+                            <div class="mb-6 flex justify-between items-start">
+                                <span class="material-symbols-outlined text-4xl text-primary group-hover:scale-110 transition-transform">robot_2</span>
+                                <span class="text-[10px] py-1 px-2 border border-slate-700 rounded text-slate-500 uppercase">Frameworks</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3">Écosystème Deep Learning</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Suivi des mises à jour majeures de PyTorch et JAX, avec un focus sur la parallélisation du calcul sur GPU multi-node.
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-primary">#PYTORCH</span>
+                                <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-primary">#SCALABILITY</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="mt-20 p-8 rounded-xl bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <h4 class="text-lg font-bold text-white">Prêt pour l'intégration SLAM</h4>
+                        <p class="text-sm text-slate-400">Ma veille nourrit directement mes projets de développement d'applications intelligentes.</p>
+                    </div>
+                    <a href="Contact.html" class="px-6 py-3 bg-primary text-background-dark font-bold rounded-lg hover:bg-white transition-colors text-sm">
+                        DISCUTER IA
+                    </a>
+                </div>
+
             </div>
         </main>
 
-        <footer class="border-t border-border-dark mt-12 bg-background-dark">
-            <div class="container mx-auto px-4 py-8 text-center text-sm text-slate-500">
-                <p>© 2026 TechWatch Portfolio - Spécialisation Développement IA</p>
+        <footer class="border-t border-border-dark mt-12 bg-background-dark/50">
+            <div class="container mx-auto px-4 py-8 text-center text-[10px] uppercase tracking-[0.3em] text-slate-600">
+                <p>© 2026 // Systèmes de Veille Autonomes // SLAM Specialist</p>
             </div>
         </footer>
     </div>
